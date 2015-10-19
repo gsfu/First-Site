@@ -37,9 +37,9 @@
 .nav a{height: 35px;display: inline-block;padding: 0 35px;color: #FFF;}
 .nav .active{background-color: #4593FD;}
 /*商品弹出列表*/
-.shopClass_show{background-color: #4593FD; position: absolute;left: 0; top: 35px; width: 100%;}
-.shopClass_item{padding: 14px 10px; border-bottom: #3487F2 solid 1px; border-top: #5AA1FE solid 1px;}
-.shopClass_item dt{height: 22px; background: url(../images/icon/shop_sj.jpg) right center no-repeat;}
+.shopClass_show{background-color: #4593FD; position: absolute;left: 0; top: 35px; width: 100%; padding-bottom: 1px;}
+.shopClass_item{padding: 13px 10px; border-bottom: #3487F2 solid 1px; border-top: #5AA1FE solid 1px; line-height: 16px;}
+.shopClass_item dt{height: 21px; line-height: 1; overflow: hidden; background: url(../images/icon/shop_sj.jpg) right center no-repeat;}
 .shopClass_item .b{/*font-family: "Microsoft YaHei", "微软雅黑"; font-size: 14px; */ font: 14px/1 "Microsoft YaHei", "微软雅黑"; font-weight: bold;}
 .shopClass_item a{color: #FFF;}
 .shopClass_item .aLink{width: 48px; height: 20px; background: url(../images/icon/aLink_bg.png) left center no-repeat; display: inline-block;text-align: center;line-height: 20px; text-decoration: underline;}
@@ -66,7 +66,7 @@
 .more:hover{text-decoration: underline;}
 /*商品列表*/
 .shopList .leftArea{width: 190px;}
-.shopList .rightArea{width: 808px; border: #999 solid 1px; border-bottom: #FF201 solid 3px;height: 396px;overflow: hidden;}
+.shopList .rightArea{width: 808px; border: #999 solid 1px; border-bottom: #FF201 solid 3px;height: 398px;overflow: hidden;}
 /*商品列表-Right*/
 .shopList{margin-bottom: 15px;}
 
@@ -84,4 +84,12 @@
 .shopItem_text{padding-top: 28px;width: 100px; float: left;}
 .shopItem_text p{color: #FF7300;}
 .shopItem_text h3{font-family: "Microsoft YaHei", "微软雅黑"; font-size: 16px;font-weight: normal;color: #181818;line-height: 30px;}
+/*底部*/
+.footer{text-align: center;background-color: #D4D4D4;line-height: 24px;[padding: 50px 0;]}
+.footer i{font-style: normal;margin: 0 5px;}
+.footer a{color: #000;}
+.footer a:hover{color: #F60;}
+.web {padding-top: 30px;}
+.web img{margin: 0 12px;}
+.hr_25{height: 25px;}
 
