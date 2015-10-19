@@ -69,7 +69,8 @@
 .shopList .rightArea{width: 808px; border: #999 solid 1px; border-bottom: #FF201 solid 3px;height: 396px;overflow: hidden;}
 /*商品列表-Right*/
 .shopList{margin-bottom: 15px;}
-.shopList_top
+
+.shopList_top{margin-right: -4px; margin-bottom: 0px;}
 .shopList_sm{margin-right: -4px;}
 .shop_item{width: 202px; border-right: #999 solid 1px; border-bottom: #999 solid 1px; height: 279px;text-align: center;font-family: "Microsoft YaHei", "微软雅黑";float: left;}
 .shop_img{height: 218px; text-align: center;}
