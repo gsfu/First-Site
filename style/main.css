@@ -92,4 +92,7 @@
 .web {padding-top: 30px;}
 .web img{margin: 0 12px;}
 .hr_25{height: 25px;}
+/*产品分类*/
+.products.leftArea{width: 185px;}
+.products.rightArea{width: 810px;}
 
