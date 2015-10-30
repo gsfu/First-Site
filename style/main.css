@@ -193,3 +193,5 @@
 .hg{margin-top: 4px; display: inline-block;}
 .hg_icon{width: 55px; height: 18px; display: inline-block;background:url(../images/icon/hg_icon.jpg) left top no-repeat;color: #FFF;
  font-style: normal;text-indent: 16px; line-height: 18px; margin-right: 10px;}
+ /*送货*/
+ .des_position{background-color: #F2F2f2;}
