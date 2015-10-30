@@ -184,8 +184,9 @@
 .des_smimg img{border: #CCC solid 1px;}
 .des_smimg .active{border-color: #317EE7;position: relative;}
 .des_content{padding: 10px;}
-.des_content h3{font: bold 16px/22px "Microsoft YaHei", "微软雅黑";padding: 13px 25px;}
+.des_contest_tit{font: bold 16px/22px "Microsoft YaHei", "微软雅黑";padding: 13px 25px;}
 .des_content .dl{margin-bottom: 8px;}
+.des_content .dd{padding-left: 75px;}
 .des_content .dt{width: 75px;float: left; color: #666;text-indent: 17px; line-height: 25px;}
 .des_money{font-size: 18px;color: #F30; font-family: Verdana;}
 .des_money em{font-style: normal;font-size: 12px;}
@@ -194,4 +195,21 @@
 .hg_icon{width: 55px; height: 18px; display: inline-block;background:url(../images/icon/hg_icon.jpg) left top no-repeat;color: #FFF;
  font-style: normal;text-indent: 16px; line-height: 18px; margin-right: 10px;}
  /*送货*/
- .des_position{background-color: #F2F2f2;}
+ .des_position{background-color: #F2F2f2; padding: 15px 0;}
+ .theGoods{line-height: 24px;padding-left: 10px;}
+ .des_content .colorSelect{line-height: 30px;}
+ .des_item{color: #666; padding: 9px; border: #CCC solid 1px; float: left; background-color: #FFF; margin-right: 10px;}
+ .des_item_active{border-color: #317EE7; color: #333;}
+ .des_item_sm{padding: 3px 7px; margin-bottom: 8px;}
+ .des_content .des_select_more{line-height: 55px;}
+ /*数量*/
+ .des_number{border: #B2B2B2 solid 1px; height: 32px; width: 82px; float: left;}
+ .des_number div{height: 100%; float: left;}
+ .reduction,.plus{width: 15px; background: url(../images/icon/plus_bg.jpg) left top no-repeat; line-height: 32px; text-align: center;color: #333;}
+ .reduction{border-right: #B2B2B2 solid 1px;}
+ .plus{border-left: #B2B2B2 solid 1px;}
+ .des_input{width: 42px; background: url(../images/icon/des_input_bg.jpg) left top no-repeat; padding: 0 4px; }
+ .des_input input{width: 100%; height: 100%; line-height: 32px\9; text-align: center;}
+ .xg{float: left;padding: 10px;font-weight: bold;color: #656565;}
+ .xg em{color: #FB7700; font-style: normal;}
+ .des_content .des_num{line-height: 32px;}
