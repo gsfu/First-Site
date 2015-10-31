@@ -213,3 +213,11 @@
  .xg{float: left;padding: 10px;font-weight: bold;color: #656565;}
  .xg em{color: #FB7700; font-style: normal;}
  .des_content .des_num{line-height: 32px;}
+ /*已选择*/
+ .des_select{font-weight: bold; margin: 22px 0 12px; text-indent: 17px;}
+ .des_select span{color: #0479C9}
+ .shop_buy{text-align: center;}
+ .shopping_btn, .buy_btn{display: inline-block;width: 184px;height: 48px;background: url(../images/icon/buy_btn.jpg) left top no-repeat;}
+ .line{width: 1px; height: 90px; overflow: hidden; background-color: #CCC; display: inline-block;margin: 0 40px;}
+ .line, .shopping_btn, .buy_btn{vertical-align: middle;}
+ .notes{color: #CCC; text-indent: 17px;}
