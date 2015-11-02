@@ -221,3 +221,11 @@
  .line{width: 1px; height: 90px; overflow: hidden; background-color: #CCC; display: inline-block;margin: 0 40px;}
  .line, .shopping_btn, .buy_btn{vertical-align: middle;}
  .notes{color: #CCC; text-indent: 17px;}
+ /*产品介绍*/
+ .des_info .leftArea{width: 190px;height: 300px;}
+ .des_info .rightArea{width: 790px;height: 200px;}
+ .recommend{border:#CCC solid 1px; background-color: #FFF; padding-bottom: 15px;}
+ .recommend .tit{height: 39px; border-bottom:#CCC solid 1px;line-height: 39px;text-indent: 15px; 
+ 	font-size: 14px;background-color: #F3F3F3;}
+ .recommend .item{float: none; height: auto;}
+ .recommend .money{padding-top: 0;}
