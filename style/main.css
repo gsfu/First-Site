@@ -92,6 +92,7 @@
 .web {padding-top: 30px;}
 .web img{margin: 0 12px;}
 .hr_25{height: 25px;}
+.hr_45{height: 45px;}
 .hr_7{height: 7px; overflow: hidden;}
 .hr_15{height: 15px;overflow: hidden;}
 /*产品分类*/
@@ -229,3 +230,17 @@
  	font-size: 14px;background-color: #F3F3F3;}
  .recommend .item{float: none; height: auto;}
  .recommend .money{padding-top: 0;}
+ /*详细介绍*/
+ .des_infoContent{border: #CCC solid 1px; background-color: #FFF;}
+ .des_tit{height: 39px; border-bottom: #CCC solid 1px; 
+ 	background: url(../images/icon/des_title.jpg)left top repeat-x;}
+ .des_tit li{float: left; width: 50%; font: 14px/39px "宋体"; text-align: center; border-left: solid 1px #CCC;margin-left: -1;}
+ .des_tit .active{background-color: #0479CA; font-weight: bold;color: #FFF; position: relative;}
+ .des_tit span{background: url(../images/icon/des_title_icon.png) left center no-repeat; padding-left: 32px; display: inline-block; line-height: 38px;}
+ .ad{padding: 30px 0; text-align: center;}
+ .info_tit{height: 26px; border-bottom: #CCC solid 1px;font-family: "Microsoft YaHei", "微软雅黑";margin-bottom: 18px;}
+ .info_tit h3{float: left;font-size: 16px; color: #2357A5; border-bottom: #2357A5 solid 1px;height: 26px;margin-bottom: -1px;position: relative; padding-right: 8px;}
+ .info_tit h4{font-size: 12px; line-height: 26px;padding-left: 4px; color: 656565;}
+ .info_text{padding: 0 20px;}
+ .info_text p{line-height: 22px; font-size: 14px; color: #656565}
+ .center{display: block;margin: 0 auto;}
