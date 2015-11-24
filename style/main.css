@@ -355,5 +355,13 @@
 .login_btn{width: 309px; height: 36px; background: url(../images/icon/login_btn.jpg) left top no-repeat;}
 .login_partners{padding-top: 34px;}
 .login_list li{float: left; line-height: 20px;}
-.login_list sapn{color: #999; margin: 0 2px;}
+.login_list span{color: #999; margin: 0 2px;}
 .reg_link{width: 115px; height: 31px; background: url(../images/icon/red_link.jpg) left top no-repeat;position: absolute; right:31px; bottom: -31px;}
+.reg_logo .comWidth{width: 630px;}
+.regBox{width: 628px; margin: 10px auto; border: #CCC solid 1px;}
+.reg_item{font: 14px/34px "宋体"; width: 110px; text-align: right; float: left;}
+.reg_item i{color: red; font-style: normal; margin: 5px;}
+.input_item{width: 306px; float: left;}
+.regBox li{height: 70px; vertical-align: top;}
+.regBox .autoLogin{height: 46px; padding: 0;}
+.regBox .login_cont{padding: 35px 76px 20px 76px;}
