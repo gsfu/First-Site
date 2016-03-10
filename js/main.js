@@ -41,7 +41,7 @@ function init()
 	ane = new aneObj();
 	ane.init();
 
-	fruit = new fruitObj()
+	fruit = new fruitObj();
 	fruit.init();
 
 }

@@ -25,12 +25,12 @@ fruitObj.prototype.draw = function()
 		{
 			//draw
 			//find an ane, frow, fly up
-			ctx2.drawImage(this.orange, this.x[i]-this.orange.widrh*0.5, this.y[i]-this.orange.height*0.5;)
+			ctx2.drawImage(this.orange, this.x[i]-this.orange.width*0.5, this.y[i]-this.orange.height*0.5)
 		}
 }
-fruitObj.prototype.born = function()
+fruitObj.prototype.born = function(i)
 {
 		var aneID = Math.floor(Math.random()*ane.num);
-		this.x[i] = ane.x[aneID]
+		this.x[i] = ane.x[aneID];
 		this.y[i] = canHeight - ane.len[aneID];
 }
