@@ -15,6 +15,7 @@ var bgPic = new Image();
 var ane;
 var fruit;
 
+var mom;
 document.body.onload = game;
 function game()
 {
@@ -43,6 +44,9 @@ function init()
 	fruit = new fruitObj();
 	fruit.init();
 
+	mom = new momObj();
+	mom.init();
+
 }
 function gameloop()
 {
@@ -54,5 +58,8 @@ function gameloop()
 		drawBackground();
 		ane.draw();
 		fruitMonitor();
-		fruit.draw();		
+		fruit.draw();	
+
+		ctx1.clearRect(0, 0, canWidth,canHeight);//
+		mom.draw();	
 }
