@@ -29,14 +29,15 @@ momObj.prototype.draw = function()
 		var beta = Math.atan2(deltaY,deltaX); //-PI, Pi
 
 		//lerp angle
-		this.angle = lerpAngle(beta, this.angle, 0.6);
+		this.angle = lerpAngle(beta, this.angle, 0.9);
 
 		ctx1.save();
 		ctx1.translate(this.x, this.y);
 		ctx1.rotate(this.angle);
-		ctx1.drawImage(this.bigEye, -this.bigEye.width*0.5, -this.bigEye.height*0.5);
-		ctx1.drawImage(this.bigBody,-this.bigBody.width*0.5, -this.bigBody.height*0.5);
+		
 		ctx1.drawImage(this.bigTail,-this.bigTail.width*0.5 + 30, -this.bigTail.height*0.5);
+		ctx1.drawImage(this.bigBody,-this.bigBody.width*0.5, -this.bigBody.height*0.5);
+		ctx1.drawImage(this.bigEye, -this.bigEye.width*0.5, -this.bigEye.height*0.5);
 
 		ctx1.restore();
 }
