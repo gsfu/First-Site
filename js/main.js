@@ -21,6 +21,8 @@ var babay;
 var mx;
 var my;
 
+var babyTail = [];
+
 document.body.onload = game;
 function game()
 {
@@ -60,6 +62,11 @@ function init()
 	mx = canWidth*0.5;
 	my = canHeight*0.5;
 
+	for (var i = 0; i < 8; i++) 
+	{
+		this.babyTail[i] = new Image();
+		this.babyTail[i].src = "./src/babyTail" + i + ".png";
+	}	
 }
 function gameloop()
 {
@@ -67,7 +74,10 @@ function gameloop()
 		var now = Date.now();
 		deltaTime = now - lastTime;
 		lastTime = now;
-		if(deltaTime > 40) deltaTime = 40;
+		if(deltaTime > 50) 
+		{
+			deltaTime = 50;
+		}
 
 		drawBackground();
 		ane.draw();
