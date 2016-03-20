@@ -8,10 +8,14 @@ var babyObj = function()
 	//2.first definite the var about eye body tail
 	this.babyEye = new Image();
 	this.babyBody = new Image();
-	this.babyTail = new Image();
+	
 
 	this.babyTailTimer = 0;
 	this.babyTailCount = 0;
+
+	this.babyEyeTimer = 0;
+	this.babyEyeCount = 0;
+	this.babyEyeInterval = 1000;
 }
 babyObj.prototype.init = function()
 {
@@ -21,7 +25,7 @@ babyObj.prototype.init = function()
 	this.angle = 0;
 	//2.load the sourse for init
 	
-	this.babyEye.src = "./src/babyEye0.png";
+	//this.babyEye.src = "./src/babyEye0.png";
 	this.babyBody.src = "./src/babyFade0.png";
 	//this.babyTail.src = "./src/babyTail0.png"
 }
@@ -47,6 +51,22 @@ babyObj.prototype.draw = function()
 			this.babyTailTimer %= 50;    
 		}
 
+		//baby eye
+		this.babyEyeTimer += deltaTime;
+		if(this.babyEyeTimer > this.babyEyeInterval)
+		{
+			this.babyEyeCount = (this.babyEyeCount + 1) % 2;
+			this.babyEyeTimer %= this.babyEyeInterval;//to setup 0 again
+
+			if (this.babyEyeCount == 0) 
+			{
+					this.babyEyeInterval = Math.random()/*(0<= & <1)*/ * 1500 +2000 //(2500-3500)
+			}else
+			{
+					this.babyEyeInterval = 200;
+			}
+		}
+
 			//1.ctx1
 			//7.limit to apply baby only
 		ctx1.save();
@@ -64,7 +84,8 @@ babyObj.prototype.draw = function()
 		//8.second draw body(will be in the middle layer)
 		ctx1.drawImage(this.babyBody, /*7.this.x, this.y*/-this.babyBody.width*0.5, -this.babyBody.height*0.5 /*7.make the image center as o,0 point*/);
 		//8.last draw eye(will be in the top layer)
-		ctx1.drawImage(this.babyEye, /*7.this.x, this.y*/-this.babyEye.width*0.5, -this.babyEye.height*0.5 /*7.make the image center as o,0 point*/);
+		var babyEyeCount = this.babyEyeCount;
+		ctx1.drawImage(babyEye[babyEyeCount], /*7.this.x, this.y*/-babyEye[babyEyeCount].width*0.5, -babyEye[babyEyeCount].height*0.5 /*7.make the image center as o,0 point*/);
 		//4. imput the draw methon into main.js loop
 		//5. no baby show up, print to debug
 		//5.console.log(this.x);
