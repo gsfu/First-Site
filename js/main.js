@@ -27,6 +27,8 @@ var momTail = [];
 var babyBody = [];
 var momEye = [];
 
+var data;
+
 document.body.onload = game;
 function game()
 {
@@ -96,6 +98,8 @@ function init()
 		momEye[i].src = "./src/bigEye" +i + ".png";
 	}
 }
+
+	data = new dataObj();
 function gameloop()
 {
         window.requestAnimationFrame(gameloop);
@@ -117,6 +121,8 @@ function gameloop()
 		baby.draw();
 		momFruitCollision();
 		momBabyCollision();
+
+		data.draw();	
 		
 }
 function onMouseMove(e)
