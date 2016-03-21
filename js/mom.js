@@ -1,21 +1,24 @@
 var momObj = function()
 {
-	this.x;
-	this.y;
-	this.angle;
-	this.bigEye = new Image();
+	this.x =0;
+	this.y =0;
+	this.angle =0;
+
 	this.bigBody = new Image();
-	
 
 	this.momTailTimer = 0;
 	this.momTailCount = 0;
+
+	this.momEyeTimer = 0;
+	this.momEyeCount = 0;
+	this.momEyeInterval = 1000;
 }
 momObj.prototype.init = function()
 {
-	this.x = canWidth*0.5;
-	this.y = canHeight*0.5;
+	this.x = canWidth * 0.5;
+	this.y = canHeight * 0.5;
 	this.angle = 0;
-	this.bigEye.src = "./src/bigEye0.png";
+	//this.bigEye.src = "./src/bigEye0.png";
 	this.bigBody.src = "./src/bigSwim0.png";
 	//this.bigTail.src = "./src/bigTail0.png"
 }
@@ -29,16 +32,31 @@ momObj.prototype.draw = function()
 		//Math.atan2(y,x)
 		var deltaY = my - this.y;
 		var deltaX = mx - this.x;
-		var beta = Math.atan2(deltaY,deltaX); //-PI, Pi
+		//大鱼运动时转动角度
+		var beta = Math.atan2(deltaY,deltaX) + Math.PI; //-PI, Pi
 
 		//lerp angle
-		this.angle = lerpAngle(beta, this.angle, 0.9);
+		this.angle = lerpAngle(beta, this.angle, 0.7);
 
 		this.momTailTimer += deltaTime;
 		if (this.momTailTimer > 50)
 		{
 			this.momTailCount = (this.momTailCount + 1) % 8;
 			this.momTailTimer %= 50;
+		}
+
+		this.momEyeTimer += deltaTime;
+		if(this.momEyeTimer > this.momEyeInterval)
+		{
+			this.momEyeCount = (this.momEyeCount + 1) % 2;
+			this.momEyeTimer %= this.momEyeInterval;
+			if (this.momEyeCount == 0) 
+			{
+					this.momEyeInterval = Math.random()/*(0<= & <1)*/ * 1500 +2000;//(2500-3500)
+			}else
+			{
+					this.momEyeInterval = 200;
+			}
 		}
 
 		ctx1.save();
@@ -49,7 +67,9 @@ momObj.prototype.draw = function()
 		//ctx1.drawImage(bigTail[bigTailCount],-bigTail[bigTailCount].width*0.5 + 30, -bigTail[bigTailCount].height*0.5);
 		ctx1.drawImage(momTail[momTailCount], -momTail[momTailCount].width*0.5 + 30, -momTail[momTailCount].height*0.5);
 		ctx1.drawImage(this.bigBody,-this.bigBody.width*0.5, -this.bigBody.height*0.5);
-		ctx1.drawImage(this.bigEye, -this.bigEye.width*0.5, -this.bigEye.height*0.5);
+
+		var momEyeCount = this.momEyeCount;
+		ctx1.drawImage(momEye[momEyeCount], -momEye[momEyeCount].width*0.5, -momEye[momEyeCount].height*0.5);
 
 		ctx1.restore();
 }
