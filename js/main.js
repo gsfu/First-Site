@@ -97,9 +97,10 @@ function init()
 		momEye[i] = new Image();
 		momEye[i].src = "./src/bigEye" +i + ".png";
 	}
-}
 
 	data = new dataObj();
+}
+
 function gameloop()
 {
         window.requestAnimationFrame(gameloop);
