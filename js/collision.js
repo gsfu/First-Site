@@ -11,6 +11,9 @@ function momFruitCollision()
 							 //fruit eaten
 							 fruit.dead(i);
 							 data.fruitNum++;
+							 mom.momBodyCount++;
+							 if(mom.momBodyCount > 7)
+							 		mom.momBodyCount = 7;
 							 if(fruit.fruitType[i] == "blue")
 							 {
 							 		data.double = 2;
@@ -29,6 +32,8 @@ function momBabyCollision()
 		//baby recover
 		baby.babyBodyCount = 0;
 		// data >= 0
-		data.reset();
+		//data.reset();
+		mom.momBodyCount = 0;
+		data.addScore();
 	};
 }
