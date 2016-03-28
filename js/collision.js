@@ -20,6 +20,7 @@ function momFruitCollision()
 								 {
 								 		data.double = 2;
 								 }
+								wave.born(fruit.x[i], fruit.y[i]); //碰撞特效
 						}
 				}
 			}
