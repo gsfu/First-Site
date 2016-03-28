@@ -111,7 +111,7 @@ function init()
 		momBodyBlue[i].src = "./src/bigSwimBlue" +i + ".png";
 	}
 	ctx1.font = "30px verdana";
-	can1.textAlign = "center";
+	ctx1.textAlign = "center";
 }
 
 function gameloop()
@@ -141,10 +141,14 @@ function gameloop()
 }
 function onMouseMove(e)
 {
-	if(e.offSetX || e.layerX)
+	if(!data.gameOver)
 	{
-			mx = e.offSetX == undefined ? e.layerX : e.offSetX;
-			my = e.offSetY == undefined ? e.layerY : e.offSetY;
-			//console.log(mx);
+			if(e.offSetX || e.layerX)
+		{
+				mx = e.offSetX == undefined ? e.layerX : e.offSetX;
+				my = e.offSetY == undefined ? e.layerY : e.offSetY;
+				//console.log(mx);
+		}
 	}
+	
 }
