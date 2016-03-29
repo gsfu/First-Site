@@ -36,6 +36,9 @@ var data;
 var wave;
 var swave;
 
+var dust;
+var dustPic = [];
+
 document.body.onload = game;
 function game()
 {
@@ -121,6 +124,15 @@ function init()
 
 	swave = new swaveObj();
 	swave.init();
+
+	dust = new dustObj;
+	dust.init();
+
+	for(var i =0; i < 6; i++)
+	{
+		dustPic[i] = new Image();
+		dustPic[i].src = "./src/dust" +i + ".png";    
+	}
 }
 
 function gameloop()
@@ -148,6 +160,7 @@ function gameloop()
 		data.draw();	
 	    wave.draw();
 	    swave.draw();
+	    dust.draw();
 		
 }
 function onMouseMove(e)
