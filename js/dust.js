@@ -15,9 +15,9 @@ dustObj.prototype.init = function()
 	{
 		this.x[i] = Math.random() * canWidth;
 		this.y[i] = Math.random() * canHeight;
-		this.amp[i] = 20 + Math.random() * 15;
-		this.NO[i] = Math.floor(Math.random() * 7);  // [0,7)包括0，不包括7。floor取整
-		//console.log(this.NO[i]);
+		this.amp[i] = 20 + Math.random() * 25;
+		this.NO[i] = Math.floor(Math.random() * 6); // [0,7)包括0，不包括7。floor取整
+		console.log(this.NO[i]);
 	}
 		this.alpha = 0;
 }
