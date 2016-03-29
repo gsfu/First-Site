@@ -42,7 +42,9 @@ function momBabyCollision()
 				//data.reset();
 				mom.momBodyCount = 0;
 				data.addScore();
+				swave.born(baby.x, baby.y);
 			}
+			
 	}
 
 }

@@ -34,6 +34,7 @@ var momBodyBlue = [];
 var data;
 
 var wave;
+var swave;
 
 document.body.onload = game;
 function game()
@@ -117,6 +118,9 @@ function init()
 
 	wave = new waveObj();
 	wave.init();
+
+	swave = new swaveObj();
+	swave.init();
 }
 
 function gameloop()
@@ -143,6 +147,7 @@ function gameloop()
 
 		data.draw();	
 	    wave.draw();
+	    swave.draw();
 		
 }
 function onMouseMove(e)
