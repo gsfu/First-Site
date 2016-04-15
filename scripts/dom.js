@@ -1,10 +1,8 @@
-// The DOM helper module
-
 jewel.dom = (function() {
 
 	function $(path, parent) {
 		parent = parent || document;
-		return parent.queueSelectorAll(path);
+		return parent.querySelectorAll(path);
 	}
 
 	function hasClass(el, clsName) {
